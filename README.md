@@ -1,26 +1,25 @@
-# 🧠 Python Portfolio Tracker (CLI)
+# 📊 Python Portfolio Tracker Dashboard
 
-A command-line portfolio analytics tool built with Python.  
-Tracks stock investments, fetches live prices, calculates P&L, and generates HTML reports.
-
----
-
-## ⚙️ Features
-- Store trades in a SQLite database  
-- Fetch live stock data via Yahoo Finance (`yfinance`)  
-- Calculate portfolio metrics (cost, value, profit/loss, allocation)  
-- Generate visual reports with `matplotlib`  
-- Simple CLI interface using `argparse`
+An interactive **portfolio tracker** built with **Python, Streamlit, and SQLite**, which lets you:
+- Add and manage stock positions  
+- Fetch live prices (via Yahoo Finance API)  
+- Calculate portfolio metrics (profit/loss, allocation, value)  
+- Generate visual reports and charts  
 
 ---
 
-## 🖥️ Usage
+## 🧠 Project Overview
+
+This project has **two parts**:
+1. **Command-Line Interface (CLI)** — for adding trades, viewing performance, and generating HTML reports.
+2. **Streamlit Dashboard** — for an **interactive visual dashboard** experience (add stocks, view P&L, see allocation charts, and download CSVs).
+
+---
+
+## 🚀 How to Run
+
+### 🔹 1. Run the CLI version
 ```bash
-# Add a position
-python python_portfolio_tracker.py add --symbol AAPL --shares 10 --price 150 --date 2024-07-01
-
-# View your portfolio (fetches live prices)
 python python_portfolio_tracker.py view
-
-# Generate HTML report with charts
 python python_portfolio_tracker.py report
+
